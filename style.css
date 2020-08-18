@@ -1,8 +1,47 @@
-h1 {text-align: center;
-color: white;
+h1 {
+  text-align: center;
+  color: black;
 }
-ul {text-align: center;
-color: white;
+li {
+  float: left;
+  border-right: 1px solid #bbb
 }
-html {background-color: black;
+li:last-child {
+  border-right: none;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  background-color: #e62020;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+li a:hover {
+background-color: #111;
+}
+.active {
+  background-color: #4CAF50;
+}
+
+html {
+  background-color:white;
+}
+body, html {
+  height: 100%;
+}
+.hero-image {
+background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
 }
